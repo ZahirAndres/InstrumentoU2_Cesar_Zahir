@@ -1,0 +1,1612 @@
+[
+    {
+        "id": "65e033a7a758854d",
+        "type": "postgresql",
+        "z": "c515258e0dab232f",
+        "name": "",
+        "query": "INSERT INTO sensor_details (sensor_id, user_id, value) VALUES (1,1,'{{{msg.payload}}}');",
+        "postgreSQLConfig": "3cd515a78cadaa56",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 490,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "469b93845104ab34",
+        "type": "mqtt in",
+        "z": "c515258e0dab232f",
+        "name": "Sensor Inclinación",
+        "topic": "zarm/sesion1",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "4c628c5b34efd314",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 230,
+        "y": 160,
+        "wires": [
+            [
+                "65e033a7a758854d"
+            ]
+        ]
+    },
+    {
+        "id": "7e498946f9885147",
+        "type": "postgresql",
+        "z": "c515258e0dab232f",
+        "name": "",
+        "query": "INSERT INTO actuator_details (actuator_id , user_id, state) VALUES (1,1,'{{{msg.payload}}}');",
+        "postgreSQLConfig": "3cd515a78cadaa56",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 1390,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7f91d72cd11fa544",
+        "type": "postgresql",
+        "z": "c515258e0dab232f",
+        "name": "",
+        "query": "INSERT INTO sensor_details (sensor_id, user_id, value) VALUES (1,1,'{{{msg.payload}}}');",
+        "postgreSQLConfig": "3cd515a78cadaa56",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 490,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5eeb28f2f6e93451",
+        "type": "mqtt in",
+        "z": "c515258e0dab232f",
+        "name": "Sensor de Agua",
+        "topic": "zarm/sesion",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "4c628c5b34efd314",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 220,
+        "y": 200,
+        "wires": [
+            [
+                "7f91d72cd11fa544"
+            ]
+        ]
+    },
+    {
+        "id": "f970b1e4567651bf",
+        "type": "postgresql",
+        "z": "c515258e0dab232f",
+        "name": "",
+        "query": "INSERT INTO sensor_details (sensor_id, user_id, value) VALUES (1,1,'{{{msg.payload}}}');",
+        "postgreSQLConfig": "3cd515a78cadaa56",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 490,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3711e2ce8e044b1d",
+        "type": "mqtt in",
+        "z": "c515258e0dab232f",
+        "name": "Sensor de Sonido",
+        "topic": "zarm/sesion",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "4c628c5b34efd314",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 230,
+        "y": 240,
+        "wires": [
+            [
+                "f970b1e4567651bf"
+            ]
+        ]
+    },
+    {
+        "id": "14273acc832a2bfb",
+        "type": "postgresql",
+        "z": "c515258e0dab232f",
+        "name": "",
+        "query": "INSERT INTO sensor_details (sensor_id, user_id, value) VALUES (1,1,'{{{msg.payload}}}');",
+        "postgreSQLConfig": "3cd515a78cadaa56",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 490,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e52456b395f01c3e",
+        "type": "mqtt in",
+        "z": "c515258e0dab232f",
+        "name": "Sensor de Sonido Pequeño",
+        "topic": "zarm/sesion",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "4c628c5b34efd314",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 260,
+        "y": 280,
+        "wires": [
+            [
+                "14273acc832a2bfb"
+            ]
+        ]
+    },
+    {
+        "id": "078329ddd7c7434c",
+        "type": "postgresql",
+        "z": "c515258e0dab232f",
+        "name": "",
+        "query": "INSERT INTO sensor_details (sensor_id, user_id, value) VALUES (1,1,'{{{msg.payload}}}');",
+        "postgreSQLConfig": "3cd515a78cadaa56",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 490,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9d472ded4bb46697",
+        "type": "mqtt in",
+        "z": "c515258e0dab232f",
+        "name": "Sensor de Temperatura",
+        "topic": "zarm/sesion",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "4c628c5b34efd314",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 240,
+        "y": 320,
+        "wires": [
+            [
+                "078329ddd7c7434c"
+            ]
+        ]
+    },
+    {
+        "id": "3b6cc731cd058928",
+        "type": "postgresql",
+        "z": "c515258e0dab232f",
+        "name": "",
+        "query": "INSERT INTO sensor_details (sensor_id, user_id, value) VALUES (1,1,'{{{msg.payload}}}');",
+        "postgreSQLConfig": "3cd515a78cadaa56",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 490,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ea43927a65006d3f",
+        "type": "mqtt in",
+        "z": "c515258e0dab232f",
+        "name": "Sensor de Bloqueo de Luz",
+        "topic": "zarm/sesion",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "4c628c5b34efd314",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 250,
+        "y": 360,
+        "wires": [
+            [
+                "3b6cc731cd058928"
+            ]
+        ]
+    },
+    {
+        "id": "0b4f54b325980cd9",
+        "type": "postgresql",
+        "z": "c515258e0dab232f",
+        "name": "",
+        "query": "INSERT INTO sensor_details (sensor_id, user_id, value) VALUES (1,1,'{{{msg.payload}}}');",
+        "postgreSQLConfig": "3cd515a78cadaa56",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 490,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3a1b00230ad3abc5",
+        "type": "mqtt in",
+        "z": "c515258e0dab232f",
+        "name": "Sensor de Vibración",
+        "topic": "zarm/sesion",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "4c628c5b34efd314",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 230,
+        "y": 400,
+        "wires": [
+            [
+                "0b4f54b325980cd9"
+            ]
+        ]
+    },
+    {
+        "id": "26940189e33d1e59",
+        "type": "postgresql",
+        "z": "c515258e0dab232f",
+        "name": "",
+        "query": "INSERT INTO sensor_details (sensor_id, user_id, value) VALUES (1,1,'{{{msg.payload}}}');",
+        "postgreSQLConfig": "3cd515a78cadaa56",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 490,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "57e5cf357d0cd8d8",
+        "type": "mqtt in",
+        "z": "c515258e0dab232f",
+        "name": "Sensor RGB",
+        "topic": "zarm/sesion",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "4c628c5b34efd314",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 210,
+        "y": 440,
+        "wires": [
+            [
+                "26940189e33d1e59"
+            ]
+        ]
+    },
+    {
+        "id": "9e2f67ad72b8c14e",
+        "type": "postgresql",
+        "z": "c515258e0dab232f",
+        "name": "",
+        "query": "INSERT INTO sensor_details (sensor_id, user_id, value) VALUES (1,1,'{{{msg.payload}}}');",
+        "postgreSQLConfig": "3cd515a78cadaa56",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 1870,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "92b0527685bbfe65",
+        "type": "mqtt in",
+        "z": "c515258e0dab232f",
+        "name": "Sensor de Alcohol MQ-3",
+        "topic": "zarm/sesion",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "4c628c5b34efd314",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1630,
+        "y": 240,
+        "wires": [
+            [
+                "9e2f67ad72b8c14e"
+            ]
+        ]
+    },
+    {
+        "id": "59068894ac9e129f",
+        "type": "postgresql",
+        "z": "c515258e0dab232f",
+        "name": "",
+        "query": "INSERT INTO sensor_details (sensor_id, user_id, value) VALUES (1,1,'{{{msg.payload}}}');",
+        "postgreSQLConfig": "3cd515a78cadaa56",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 490,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "71c3778d9bcaa5e0",
+        "type": "mqtt in",
+        "z": "c515258e0dab232f",
+        "name": "Sensor KY-32",
+        "topic": "zarm/sesion",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "4c628c5b34efd314",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 210,
+        "y": 480,
+        "wires": [
+            [
+                "59068894ac9e129f"
+            ]
+        ]
+    },
+    {
+        "id": "b0d82fc24b276943",
+        "type": "postgresql",
+        "z": "c515258e0dab232f",
+        "name": "",
+        "query": "INSERT INTO sensor_details (sensor_id, user_id, value) VALUES (1,1,'{{{msg.payload}}}');",
+        "postgreSQLConfig": "3cd515a78cadaa56",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 490,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4dd5ab457d0b0173",
+        "type": "mqtt in",
+        "z": "c515258e0dab232f",
+        "name": "Sensor Magnético Efecto Hall",
+        "topic": "zarm/sesion",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "4c628c5b34efd314",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 260,
+        "y": 520,
+        "wires": [
+            [
+                "b0d82fc24b276943"
+            ]
+        ]
+    },
+    {
+        "id": "8b064892441dca30",
+        "type": "postgresql",
+        "z": "c515258e0dab232f",
+        "name": "",
+        "query": "INSERT INTO sensor_details (sensor_id, user_id, value) VALUES (1,1,'{{{msg.payload}}}');",
+        "postgreSQLConfig": "3cd515a78cadaa56",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 1870,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9cd6b9af0b8985c3",
+        "type": "mqtt in",
+        "z": "c515258e0dab232f",
+        "name": "Sensor de Gas MQ-2",
+        "topic": "zarm/mq/2",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "4c628c5b34efd314",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1620,
+        "y": 200,
+        "wires": [
+            [
+                "8b064892441dca30"
+            ]
+        ]
+    },
+    {
+        "id": "22e9e2a066f57fa4",
+        "type": "postgresql",
+        "z": "c515258e0dab232f",
+        "name": "",
+        "query": "INSERT INTO sensor_details (sensor_id, user_id, value) VALUES (1,1,'{{{msg.payload}}}');",
+        "postgreSQLConfig": "3cd515a78cadaa56",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 930,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "02cc924ee526cf80",
+        "type": "mqtt in",
+        "z": "c515258e0dab232f",
+        "name": "Sensor de Temperatura KY-001",
+        "topic": "zarm/sesion",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "4c628c5b34efd314",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 710,
+        "y": 160,
+        "wires": [
+            [
+                "22e9e2a066f57fa4"
+            ]
+        ]
+    },
+    {
+        "id": "9087b5cece84b390",
+        "type": "postgresql",
+        "z": "c515258e0dab232f",
+        "name": "",
+        "query": "INSERT INTO sensor_details (sensor_id, user_id, value) VALUES (1,1,'{{{msg.payload}}}');",
+        "postgreSQLConfig": "3cd515a78cadaa56",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 930,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c9ab00daaa138326",
+        "type": "mqtt in",
+        "z": "c515258e0dab232f",
+        "name": "Sensor de Fotorresistencia",
+        "topic": "zarm/sesion",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "4c628c5b34efd314",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 690,
+        "y": 200,
+        "wires": [
+            [
+                "9087b5cece84b390"
+            ]
+        ]
+    },
+    {
+        "id": "ea52c57e7591745b",
+        "type": "postgresql",
+        "z": "c515258e0dab232f",
+        "name": "",
+        "query": "INSERT INTO sensor_details (sensor_id, user_id, value) VALUES (1,1,'{{{msg.payload}}}');",
+        "postgreSQLConfig": "3cd515a78cadaa56",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 930,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9dbec3b3997e5164",
+        "type": "mqtt in",
+        "z": "c515258e0dab232f",
+        "name": "Sensor de Temperatura KY-013",
+        "topic": "zarm/sesion",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "4c628c5b34efd314",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 710,
+        "y": 240,
+        "wires": [
+            [
+                "ea52c57e7591745b"
+            ]
+        ]
+    },
+    {
+        "id": "9e3b03e2f5f3cb62",
+        "type": "postgresql",
+        "z": "c515258e0dab232f",
+        "name": "",
+        "query": "INSERT INTO sensor_details (sensor_id, user_id, value) VALUES (1,1,'{{{msg.payload}}}');",
+        "postgreSQLConfig": "3cd515a78cadaa56",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 930,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "776b2d9018f96f5d",
+        "type": "mqtt in",
+        "z": "c515258e0dab232f",
+        "name": "Sensor Infrarrojo KY-022",
+        "topic": "zarm/sesion",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "4c628c5b34efd314",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 690,
+        "y": 280,
+        "wires": [
+            [
+                "9e3b03e2f5f3cb62"
+            ]
+        ]
+    },
+    {
+        "id": "4270bd1b6d14aa8f",
+        "type": "postgresql",
+        "z": "c515258e0dab232f",
+        "name": "",
+        "query": "INSERT INTO sensor_details (sensor_id, user_id, value) VALUES (1,1,'{{{msg.payload}}}');",
+        "postgreSQLConfig": "3cd515a78cadaa56",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 930,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "465dc2d1ea80813e",
+        "type": "mqtt in",
+        "z": "c515258e0dab232f",
+        "name": "Sensor Magnético KY-021",
+        "topic": "zarm/sesion",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "4c628c5b34efd314",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 690,
+        "y": 320,
+        "wires": [
+            [
+                "4270bd1b6d14aa8f"
+            ]
+        ]
+    },
+    {
+        "id": "ad4e354a8d2e0401",
+        "type": "mqtt in",
+        "z": "c515258e0dab232f",
+        "name": "Pulsador",
+        "topic": "zarm/sesion1",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "4c628c5b34efd314",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1120,
+        "y": 160,
+        "wires": [
+            [
+                "7e498946f9885147"
+            ]
+        ]
+    },
+    {
+        "id": "25234c0ee485bf0a",
+        "type": "postgresql",
+        "z": "c515258e0dab232f",
+        "name": "",
+        "query": "INSERT INTO actuator_details (actuator_id , user_id, state) VALUES (1,1,'{{{msg.payload}}}');",
+        "postgreSQLConfig": "3cd515a78cadaa56",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 1410,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4e872f0014915027",
+        "type": "mqtt in",
+        "z": "c515258e0dab232f",
+        "name": "Actuador de Temperatura LM35",
+        "topic": "zarm/sesion1",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "4c628c5b34efd314",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1190,
+        "y": 480,
+        "wires": [
+            [
+                "25234c0ee485bf0a"
+            ]
+        ]
+    },
+    {
+        "id": "bd9df227e92e20a1",
+        "type": "postgresql",
+        "z": "c515258e0dab232f",
+        "name": "",
+        "query": "INSERT INTO actuator_details (actuator_id , user_id, state) VALUES (1,1,'{{{msg.payload}}}');",
+        "postgreSQLConfig": "3cd515a78cadaa56",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 1390,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0faa1a9e49cbd43e",
+        "type": "mqtt in",
+        "z": "c515258e0dab232f",
+        "name": "Actuador Láser",
+        "topic": "zarm/sesion1",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "4c628c5b34efd314",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1140,
+        "y": 200,
+        "wires": [
+            [
+                "bd9df227e92e20a1"
+            ]
+        ]
+    },
+    {
+        "id": "761f055f04af32af",
+        "type": "postgresql",
+        "z": "c515258e0dab232f",
+        "name": "",
+        "query": "INSERT INTO actuator_details (actuator_id , user_id, state) VALUES (1,1,'{{{msg.payload}}}');",
+        "postgreSQLConfig": "3cd515a78cadaa56",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 1390,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "82d36e71d53b9e74",
+        "type": "mqtt in",
+        "z": "c515258e0dab232f",
+        "name": "Actuador LEDs RGB",
+        "topic": "zarm/sesion1",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "4c628c5b34efd314",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1150,
+        "y": 240,
+        "wires": [
+            [
+                "761f055f04af32af"
+            ]
+        ]
+    },
+    {
+        "id": "443f2ce055e627dd",
+        "type": "postgresql",
+        "z": "c515258e0dab232f",
+        "name": "",
+        "query": "INSERT INTO actuator_details (actuator_id , user_id, state) VALUES (1,1,'{{{msg.payload}}}');",
+        "postgreSQLConfig": "3cd515a78cadaa56",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 1390,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1140f5557efa80a5",
+        "type": "mqtt in",
+        "z": "c515258e0dab232f",
+        "name": "Sensor Inclinación",
+        "topic": "zarm/sesion1",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "4c628c5b34efd314",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1150,
+        "y": 280,
+        "wires": [
+            [
+                "443f2ce055e627dd"
+            ]
+        ]
+    },
+    {
+        "id": "9e2b757358567863",
+        "type": "postgresql",
+        "z": "c515258e0dab232f",
+        "name": "",
+        "query": "INSERT INTO actuator_details (actuator_id , user_id, state) VALUES (1,1,'{{{msg.payload}}}');",
+        "postgreSQLConfig": "3cd515a78cadaa56",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 1390,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b434a079f6202bbf",
+        "type": "mqtt in",
+        "z": "c515258e0dab232f",
+        "name": "Buzzer Pasivo",
+        "topic": "zarm/sesion1",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "4c628c5b34efd314",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1130,
+        "y": 320,
+        "wires": [
+            [
+                "9e2b757358567863"
+            ]
+        ]
+    },
+    {
+        "id": "cb988c930f5b945d",
+        "type": "postgresql",
+        "z": "c515258e0dab232f",
+        "name": "",
+        "query": "INSERT INTO actuator_details (actuator_id , user_id, state) VALUES (1,1,'{{{msg.payload}}}');",
+        "postgreSQLConfig": "3cd515a78cadaa56",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 1390,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e806bc514c1e04b0",
+        "type": "mqtt in",
+        "z": "c515258e0dab232f",
+        "name": "Buzzer Pasivo con Melodía",
+        "topic": "zarm/sesion1",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "4c628c5b34efd314",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1170,
+        "y": 360,
+        "wires": [
+            [
+                "cb988c930f5b945d"
+            ]
+        ]
+    },
+    {
+        "id": "e2abca01b91b5011",
+        "type": "postgresql",
+        "z": "c515258e0dab232f",
+        "name": "",
+        "query": "INSERT INTO actuator_details (actuator_id , user_id, state) VALUES (1,1,'{{{msg.payload}}}');",
+        "postgreSQLConfig": "3cd515a78cadaa56",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 1390,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bb89ebf1cea1065e",
+        "type": "mqtt in",
+        "z": "c515258e0dab232f",
+        "name": "Relé",
+        "topic": "zarm/sesion",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "4c628c5b34efd314",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1110,
+        "y": 400,
+        "wires": [
+            [
+                "e2abca01b91b5011"
+            ]
+        ]
+    },
+    {
+        "id": "0d521852e0be8366",
+        "type": "postgresql",
+        "z": "c515258e0dab232f",
+        "name": "",
+        "query": "INSERT INTO actuator_details (actuator_id , user_id, state) VALUES (9,1,'{{{msg.payload}}}');",
+        "postgreSQLConfig": "3cd515a78cadaa56",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 1390,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "49684eba20ac5e20",
+        "type": "mqtt in",
+        "z": "c515258e0dab232f",
+        "name": "Jostick",
+        "topic": "zarm/sesion6/joystick",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "4c628c5b34efd314",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1110,
+        "y": 440,
+        "wires": [
+            [
+                "0d521852e0be8366"
+            ]
+        ]
+    },
+    {
+        "id": "efbe9b51c8f8c05c",
+        "type": "postgresql",
+        "z": "c515258e0dab232f",
+        "name": "",
+        "query": "INSERT INTO sensor_details (sensor_id, user_id, value) VALUES (24,1,'{{{msg.payload}}}');",
+        "postgreSQLConfig": "3cd515a78cadaa56",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 930,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3948d71107cde500",
+        "type": "mqtt in",
+        "z": "c515258e0dab232f",
+        "name": "Sensor sw inclinacion",
+        "topic": "zarm/sesion1/inclinacion",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "4c628c5b34efd314",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 680,
+        "y": 360,
+        "wires": [
+            [
+                "efbe9b51c8f8c05c"
+            ]
+        ]
+    },
+    {
+        "id": "dcc3268690cb0317",
+        "type": "postgresql",
+        "z": "c515258e0dab232f",
+        "name": "",
+        "query": "INSERT INTO sensor_details (sensor_id, user_id, value) VALUES (25,1,'{{{msg.payload}}}');",
+        "postgreSQLConfig": "3cd515a78cadaa56",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 970,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c5519696f7d9b7b1",
+        "type": "mqtt in",
+        "z": "c515258e0dab232f",
+        "name": "Sensor de inclinacion con iluminacion",
+        "topic": "zarm/sesion1/inclinacionMercurioLuminoso",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "4c628c5b34efd314",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 730,
+        "y": 400,
+        "wires": [
+            [
+                "dcc3268690cb0317"
+            ]
+        ]
+    },
+    {
+        "id": "8147805a11942792",
+        "type": "postgresql",
+        "z": "c515258e0dab232f",
+        "name": "",
+        "query": "INSERT INTO sensor_details (sensor_id, user_id, value) VALUES (26,1,'{{{msg.payload}}}');",
+        "postgreSQLConfig": "3cd515a78cadaa56",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 970,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d28721ffda2a481c",
+        "type": "mqtt in",
+        "z": "c515258e0dab232f",
+        "name": "Sensor Campo Magnético",
+        "topic": "zarm/sesion6/SensorCampoMagnetico",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "4c628c5b34efd314",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 690,
+        "y": 440,
+        "wires": [
+            [
+                "8147805a11942792"
+            ]
+        ]
+    },
+    {
+        "id": "689ebd6678aa7a8d",
+        "type": "postgresql",
+        "z": "c515258e0dab232f",
+        "name": "",
+        "query": "INSERT INTO sensor_details (sensor_id, user_id, value) VALUES (27,55,'{{{msg.payload}}}');",
+        "postgreSQLConfig": "3cd515a78cadaa56",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 1910,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6fb15c57fb1bbe47",
+        "type": "mqtt in",
+        "z": "c515258e0dab232f",
+        "name": "Sensor de Monoxido MQ 7",
+        "topic": "zarm/mq/7",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "4c628c5b34efd314",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1630,
+        "y": 160,
+        "wires": [
+            [
+                "689ebd6678aa7a8d"
+            ]
+        ]
+    },
+    {
+        "id": "cc36b283fa0b6754",
+        "type": "postgresql",
+        "z": "c515258e0dab232f",
+        "name": "",
+        "query": "INSERT INTO sensor_details (sensor_id, user_id, value) VALUES (28,55,'{{{msg.payload}}}');",
+        "postgreSQLConfig": "3cd515a78cadaa56",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 970,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c23e8a879d6d972a",
+        "type": "mqtt in",
+        "z": "c515258e0dab232f",
+        "name": "Sensor de impacto",
+        "topic": "zarm/sesion7/impacto",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "4c628c5b34efd314",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 670,
+        "y": 480,
+        "wires": [
+            [
+                "cc36b283fa0b6754"
+            ]
+        ]
+    },
+    {
+        "id": "4c038e4647bf1988",
+        "type": "postgresql",
+        "z": "c515258e0dab232f",
+        "name": "",
+        "query": "INSERT INTO sensor_details (sensor_id, user_id, value) VALUES (29,55,'{{{msg.payload}}}');",
+        "postgreSQLConfig": "3cd515a78cadaa56",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 970,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7624d0ad28309789",
+        "type": "mqtt in",
+        "z": "c515258e0dab232f",
+        "name": "Sensor Reed Swtich",
+        "topic": "zarm/sesion7/ReedSwitch",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "4c628c5b34efd314",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 670,
+        "y": 520,
+        "wires": [
+            [
+                "4c038e4647bf1988"
+            ]
+        ]
+    },
+    {
+        "id": "5d61c6e78ff08a6f",
+        "type": "mqtt in",
+        "z": "c515258e0dab232f",
+        "name": "Actuador Led dos colores",
+        "topic": "zarm/sesion7/LedDosColores",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "4c628c5b34efd314",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1170,
+        "y": 520,
+        "wires": [
+            [
+                "8351d6431443658c"
+            ]
+        ]
+    },
+    {
+        "id": "8351d6431443658c",
+        "type": "postgresql",
+        "z": "c515258e0dab232f",
+        "name": "",
+        "query": "INSERT INTO actuator_details (actuator_id , user_id, state) VALUES (14,55,'{{{msg.payload}}}');",
+        "postgreSQLConfig": "3cd515a78cadaa56",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 1410,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "879987aa6f3d886c",
+        "type": "postgresql",
+        "z": "c515258e0dab232f",
+        "name": "",
+        "query": "INSERT INTO sensor_details (sensor_id, user_id, value) VALUES (30,55,'{{{msg.payload}}}');",
+        "postgreSQLConfig": "3cd515a78cadaa56",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 710,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fb8592af6c9a4413",
+        "type": "mqtt in",
+        "z": "c515258e0dab232f",
+        "name": "Sensor de Flama",
+        "topic": "zarm/sesion7/SensorFlama",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "4c628c5b34efd314",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 400,
+        "y": 600,
+        "wires": [
+            [
+                "879987aa6f3d886c"
+            ]
+        ]
+    },
+    {
+        "id": "84f29c265d77940f",
+        "type": "postgresql",
+        "z": "c515258e0dab232f",
+        "name": "",
+        "query": "INSERT INTO sensor_details (sensor_id, user_id, value) VALUES (32,55,'{{{msg.payload}}}');",
+        "postgreSQLConfig": "3cd515a78cadaa56",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 1870,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a876b641776f2c21",
+        "type": "mqtt in",
+        "z": "c515258e0dab232f",
+        "name": "Sensor de gas metano MQ-4",
+        "topic": "zarm/mq/4",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "4c628c5b34efd314",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1640,
+        "y": 280,
+        "wires": [
+            [
+                "84f29c265d77940f"
+            ]
+        ]
+    },
+    {
+        "id": "c061550ba164c2e3",
+        "type": "postgresql",
+        "z": "c515258e0dab232f",
+        "name": "",
+        "query": "INSERT INTO sensor_details (sensor_id, user_id, value) VALUES (33,55,'{{{msg.payload}}}');",
+        "postgreSQLConfig": "3cd515a78cadaa56",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 710,
+        "y": 640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1a506883e35d4a39",
+        "type": "mqtt in",
+        "z": "c515258e0dab232f",
+        "name": "Seguidor de lineas",
+        "topic": "zarm/sesion8/SeguidorLineas",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "4c628c5b34efd314",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 410,
+        "y": 640,
+        "wires": [
+            [
+                "c061550ba164c2e3"
+            ]
+        ]
+    },
+    {
+        "id": "cccf11f8fcd07834",
+        "type": "postgresql",
+        "z": "c515258e0dab232f",
+        "name": "",
+        "query": "INSERT INTO sensor_details (sensor_id, user_id, value) VALUES (34,55,'{{{msg.payload}}}');",
+        "postgreSQLConfig": "3cd515a78cadaa56",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 710,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5046d1eebcd6b4ff",
+        "type": "mqtt in",
+        "z": "c515258e0dab232f",
+        "name": "Seguidor de pulso",
+        "topic": "zarm/sesion8/SensorPulso",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "4c628c5b34efd314",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 410,
+        "y": 680,
+        "wires": [
+            [
+                "cccf11f8fcd07834"
+            ]
+        ]
+    },
+    {
+        "id": "66263f7c648f21b8",
+        "type": "mqtt in",
+        "z": "c515258e0dab232f",
+        "name": "Actuador Led siete colores",
+        "topic": "zarm/sesion8/LedSieteColores",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "4c628c5b34efd314",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1170,
+        "y": 600,
+        "wires": [
+            [
+                "5d4c9cf1e6da2326"
+            ]
+        ]
+    },
+    {
+        "id": "5d4c9cf1e6da2326",
+        "type": "postgresql",
+        "z": "c515258e0dab232f",
+        "name": "",
+        "query": "INSERT INTO actuator_details (actuator_id , user_id, state) VALUES (15,55,'{{{msg.payload}}}');",
+        "postgreSQLConfig": "3cd515a78cadaa56",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 1410,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d8744af54d413315",
+        "type": "postgresql",
+        "z": "c515258e0dab232f",
+        "name": "",
+        "query": "INSERT INTO sensor_details (sensor_id, user_id, value) VALUES (35,55,'{{{msg.payload}}}');",
+        "postgreSQLConfig": "3cd515a78cadaa56",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 710,
+        "y": 720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8538f239ba639d28",
+        "type": "mqtt in",
+        "z": "c515258e0dab232f",
+        "name": "Sensor táctil de metal",
+        "topic": "zarm/sesion8/SensorTactilMetal",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "4c628c5b34efd314",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 420,
+        "y": 720,
+        "wires": [
+            [
+                "d8744af54d413315"
+            ]
+        ]
+    },
+    {
+        "id": "d77c7306c407aff4",
+        "type": "mqtt in",
+        "z": "c515258e0dab232f",
+        "name": "Actuador Encoder rotatorio",
+        "topic": "zarm/sesion8/rotatorio",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "4c628c5b34efd314",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1170,
+        "y": 640,
+        "wires": [
+            [
+                "eeddc59e11981ccf"
+            ]
+        ]
+    },
+    {
+        "id": "eeddc59e11981ccf",
+        "type": "postgresql",
+        "z": "c515258e0dab232f",
+        "name": "",
+        "query": "INSERT INTO actuator_details (actuator_id , user_id, state) VALUES (16,55,'{{{msg.payload}}}');",
+        "postgreSQLConfig": "3cd515a78cadaa56",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 1410,
+        "y": 640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "055fa5420b0e92b7",
+        "type": "postgresql",
+        "z": "c515258e0dab232f",
+        "name": "",
+        "query": "INSERT INTO sensor_details (sensor_id, user_id, value) VALUES (36,55,'{{{msg.payload}}}');",
+        "postgreSQLConfig": "3cd515a78cadaa56",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 710,
+        "y": 760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "72fc6df7a05b8cfd",
+        "type": "mqtt in",
+        "z": "c515258e0dab232f",
+        "name": "Sensor de obstaculos",
+        "topic": "zarm/sesion8/SensorObstaculos",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "4c628c5b34efd314",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 420,
+        "y": 760,
+        "wires": [
+            [
+                "055fa5420b0e92b7"
+            ]
+        ]
+    },
+    {
+        "id": "dae362599065bbaa",
+        "type": "postgresql",
+        "z": "c515258e0dab232f",
+        "name": "",
+        "query": "INSERT INTO sensor_details (sensor_id, user_id, value) VALUES (37,55,'{{{msg.payload}}}');",
+        "postgreSQLConfig": "3cd515a78cadaa56",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 1870,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "58b4af9e682636b7",
+        "type": "mqtt in",
+        "z": "c515258e0dab232f",
+        "name": "Sensor de LPG MQ-6",
+        "topic": "zarm/mq/6",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "4c628c5b34efd314",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1620,
+        "y": 320,
+        "wires": [
+            [
+                "dae362599065bbaa"
+            ]
+        ]
+    },
+    {
+        "id": "3cd515a78cadaa56",
+        "type": "postgreSQLConfig",
+        "name": "aiot",
+        "host": "127.0.0.1",
+        "hostFieldType": "str",
+        "port": "5432",
+        "portFieldType": "num",
+        "database": "aiot",
+        "databaseFieldType": "str",
+        "ssl": "false",
+        "sslFieldType": "bool",
+        "applicationName": "",
+        "applicationNameType": "str",
+        "max": "10",
+        "maxFieldType": "num",
+        "idle": "1000",
+        "idleFieldType": "num",
+        "connectionTimeout": "10000",
+        "connectionTimeoutFieldType": "num",
+        "user": "utng",
+        "userFieldType": "str",
+        "password": "1234",
+        "passwordFieldType": "str"
+    },
+    {
+        "id": "4c628c5b34efd314",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "192.168.111.135",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    }
+]
