@@ -7,9 +7,9 @@ Cesar Enrique Garay García
 
 # Placas con figura
 
-Mendoza Amaro
+Zahir Rodríguez
 
-Morales Lezama
+Cesar García
 
 <div style="display: flex; align-items: center;">
   <img src="" width="200" alt="Imagen">
