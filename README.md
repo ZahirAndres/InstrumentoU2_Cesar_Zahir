@@ -17,7 +17,7 @@ Morales Lezama
 
 # Resultados de examen
 
-# Curso Cisco
+# Curso - JavaScript Essentials 2
 
 Zahir Andrés Rodríguez Mora
 
