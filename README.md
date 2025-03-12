@@ -12,10 +12,7 @@ Mendoza Amaro
 Morales Lezama
 
 <div style="display: flex; align-items: center;">
-  <img src="https://github.com/user-attachments/assets/4f6e701f-acfe-4358-8174-43bcdac57ebd" width="200" alt="Imagen">
-  <video width="300" controls>
-    <source src="https://github.com/user-attachments/assets/52b51b36-e615-4fd2-aac9-627e81d1a9fc" type="video/mp4">
-  </video>
+  <img src="" width="200" alt="Imagen">
 </div>
 
 # Resultados de examen
