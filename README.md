@@ -10,6 +10,10 @@ Cesar Enrique Garay García
 
 Zahir Rodríguez
 
+<div style="display: flex; align-items: center;">
+  <img src="" width="200" alt="Imagen">
+</div>
+
 Cesar García
 
 <div style="display: flex; align-items: center;">
