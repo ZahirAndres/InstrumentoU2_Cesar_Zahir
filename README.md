@@ -6,7 +6,7 @@ Zahir Andrés Rodríguez Mora
 Cesar Enrique Garay García
 
 
-# Placas con figura
+# Placa con figura
 
 Zahir Rodríguez --- Cesar García
 
