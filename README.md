@@ -8,16 +8,10 @@ Cesar Enrique Garay García
 
 # Placas con figura
 
-Zahir Rodríguez
+Zahir Rodríguez --- Cesar García
 
 <div style="display: flex; align-items: center;">
-  <img src="" width="200" alt="Imagen">
-</div>
-
-Cesar García
-
-<div style="display: flex; align-items: center;">
-  <img src="" width="200" alt="Imagen">
+  <img src="https://github.com/user-attachments/assets/7299dd9a-682f-4a8e-b4e3-6e323ccb0ff1" width="200" alt="Imagen">
 </div>
 
 # Resultados de examen
