@@ -15,6 +15,10 @@ Aquí te presentamos la placa con la figura representativa de nuestro proyecto.
   <img src="https://github.com/user-attachments/assets/7299dd9a-682f-4a8e-b4e3-6e323ccb0ff1" width="300" alt="Imagen de la placa" style="border-radius: 8px; box-shadow: 0px 4px 10px rgba(0,0,0,0.2);">
 </div>
 
+
+[Accede al documento en Google Drive](https://drive.google.com/file/d/144AFq4a8_vJynEqSp1oYMmMjP3E8tKiX/view?usp=drive_link)
+ 
+
 ---
 
 ## Resultados de Examen
