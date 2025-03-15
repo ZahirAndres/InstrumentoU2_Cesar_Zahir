@@ -21,6 +21,7 @@ Zahir Rodríguez --- Cesar García
 Zahir Andrés Rodríguez Mora
 
 <img src="https://github.com/user-attachments/assets/83f5594e-5c31-4b7b-9bab-a96ec4bc793b"/>
+<img src="https://github.com/user-attachments/assets/4ba04318-f093-4aa1-860c-eb83520169a0"/>
 
 Cesar Enrique Garay García
 
