@@ -26,7 +26,7 @@ A continuación, los resultados obtenidos en el curso:
 ### Zahir Andrés Rodríguez Mora
 
 <div style="display: flex; justify-content: center; gap: 20px;">
-  <img src="https://github.com/user-attachments/assets/83f5594e-5c31-4b7b-9bab-a96ec4bc793b/" width="300" alt="Certificado de Zahir" style="border-radius: 8px; box-shadow: 0px 4px 10px rgba(0,0,0,0.2);">
+  <img src="https://github.com/user-attachments/assets/83f5594e-5c31-4b7b-9bab-a96ec4bc793b/" width="1000" alt="Certificado de Zahir" style="border-radius: 8px; box-shadow: 0px 4px 10px rgba(0,0,0,0.2);">
   <img src="https://github.com/user-attachments/assets/4ba04318-f093-4aa1-860c-eb83520169a0/" width="250" alt="Evaluación de Zahir" style="border-radius: 8px; box-shadow: 0px 4px 10px rgba(0,0,0,0.2);">
 </div>
 
