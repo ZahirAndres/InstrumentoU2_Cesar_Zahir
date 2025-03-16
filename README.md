@@ -39,7 +39,7 @@ A continuación, los resultados obtenidos en el curso:
   
 <div style="display: flex; justify-content: center; gap: 20px;">
 <img src="https://github.com/user-attachments/assets/7871ed35-200c-4b74-a52a-9c8b02f4ac7a/" width="1000" alt="Certificado de Cesar" style="border-radius: 8px; box-shadow: 0px 4px 10px rgba(0,0,0,0.2);">
-<img src="https://github.com/user-attachments/assets/4f302c94-0838-49f1-b82a-5e3b2a409c96)/" width="1000" alt="Certificado de Cesar" style="border-radius: 8px; box-shadow: 0px 4px 10px rgba(0,0,0,0.2);">
+<img src="https://github.com/user-attachments/assets/4f302c94-0838-49f1-b82a-5e3b2a409c96/" width="1000" alt="Certificado de Cesar" style="border-radius: 8px; box-shadow: 0px 4px 10px rgba(0,0,0,0.2);">
 
 </div>
 
